@@ -7,7 +7,7 @@
 
 #ifndef GRAPH_VIZ_PROP_WRITER_HPP_
 #define GRAPH_VIZ_PROP_WRITER_HPP_
-#include <iostream>
+//#include <iostream>
 
 //DEFINES THE FUNCTIONS TO PROPERLY DRAW THE GRAPH
 
