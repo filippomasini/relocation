@@ -9,7 +9,9 @@
 #define GRAPH_VIZ_PROP_WRITER_HPP_
 #include <iostream>
 
+//DEFINES THE FUNCTIONS TO PROPERLY DRAW THE GRAPH
 
+// Redefine how edge are represented
 template <class WeightMap,class CapacityMap, class PropertyMap>
 class edge_writer {
 public:
@@ -25,6 +27,9 @@ public:
 		else if (pm[e]==TRANSFER)
 	out << "[label=\"" << wm[e] << "\", taildistance=\"" << cm[e] << "\""<< ", color=\"red\", constraint=false, style=\"invis\""<< "]";
   }
+
+
+// Add propery maps 
 private:
   WeightMap wm;
   CapacityMap cm;
@@ -38,9 +43,7 @@ make_edge_writer(WeightMap w,CapacityMap c, PropertyMap r) {
 }
 
 
-
-
-
+// Redefine how vertices are represented
 template <class WeightMap,class CapacityMap>
 class vertex_writer {
 public:
@@ -49,6 +52,8 @@ public:
   void operator()(std::ostream &out, const Vertex& v) const {
 	  out << "[label=\"s" << wm[v] << "t" << cm[v] << "\""<<"]";
   }
+
+// Add property maps 
 private:
   WeightMap wm;
   CapacityMap cm;
