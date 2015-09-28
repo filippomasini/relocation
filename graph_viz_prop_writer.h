@@ -5,7 +5,7 @@
  *      Author: filippo
  */
 
-#ifndef GRAPH_VIZ_PROP_WRITER_HPP_
+//#ifndef GRAPH_VIZ_PROP_WRITER_HPP_
 #define GRAPH_VIZ_PROP_WRITER_HPP_
 #include <iostream>
 
